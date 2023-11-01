@@ -19,7 +19,7 @@
       "dependsOn": ["^recreate-daemon"]
     },
     "lint": {
-      "executor": "@nx/linter:eslint",
+      "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": ["apps/webclient-e2e/**/*.{js,ts}"]
