@@ -13,7 +13,7 @@ module.exports = {
   branches: ["master", "main"],
   plugins: [
     [
-      "semantic-release-gitmoji",
+      "./custom-plugin.js",
       {
         releaseRules: {
           major: [":boom:"],
@@ -55,7 +55,8 @@ module.exports = {
         prepareCmd: "yarn release",
       },
     ],
-    "@semantic-release/github",
+    //TODO: re-add
+    // "@semantic-release/github",
     [
       "@semantic-release/npm",
       {
